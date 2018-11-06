@@ -151,9 +151,7 @@ img{
     }
     .wrapper{
         width: 50%;
-        position: relative;
-        top: 40px;
-        left: -80px;
+        transform: translate(-80px, 40px);
     }
     .white-block{
         width: calc(100% + 80px);
@@ -162,7 +160,7 @@ img{
         flex-direction: row-reverse;
     }
     .back{
-        left: 0px;
+        transform: translate(0, 40px)
     }
     .menu{
         display: flex;
