@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?q70a76');
+  src:  url('../fonts/icomoon.eot?q70a76#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?q70a76') format('truetype'),
+    url('../fonts/icomoon.woff?q70a76') format('woff'),
+    url('../fonts/icomoon.svg?q70a76#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
+  padding-right: 10px;
+  font-size: 10px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  z-index: 10;
+}
+.icon-arrow-left2:before {
+  content: "\ea40";
+  padding-left: 10px;
+  font-size: 10px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  z-index: 10;
+}
+.black::before {
+  color: #676767;
+}
+.grey::before {
+  color: #4d4d4d;
+}
+.rotate::before {
+  position: static;
+  padding: 0px;
+  line-height: 18px;
+  color: black;
+}
+
+.icon-angle-down:before {
+  content: "\f107";
+  color: #8a8a8a;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  padding: 8px 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+.icon-hand-pointer-o:before {
+  content: "\f25a";
+}
+.icon-heart-o:before {
+  content: "\f08a";
+  color: #ffffff;
+  font-size: 14px;
+}
+.icon-shopping-basket:before {
+  content: "\f291";
+  color: #ffffff;
+  font-size: 10px;
+}
+.icon-share-alt:before {
+  content: "\f1e0";
+  color: #ffffff;
+  font-size: 14px;
+}
+.icon-pinterest-p, .icon-facebook, .icon-twitter, .icon-instagram {
+  cursor: pointer;
+}
+.icon-pinterest-p:before {
+  content: "\f231";
+  color: #d4dde4;
+}
+.icon-facebook:before {
+  content: "\ea90";
+  color: #d4dde4;
+}
+.icon-twitter:before {
+  content: "\f099";
+  color: #d4dde4;
+}
+.icon-instagram:before {
+  content: "\f16d";
+  color: #d4dde4;
+}

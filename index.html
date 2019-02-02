@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>MODULE</title>
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<link media="all" rel="stylesheet" href="fonts/PFDinTextCondPro-Regular.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link media="all" rel="stylesheet" href="css/main.css">
+	<link media="all" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="main">
+		<header class="header"><a class="logo-holder" href="#"><img src="images/logo.jpg" alt="Till Bill"></a></header>
+		<nav class="navigation">
+			<span class="invisible-menu" id="menu">MENU</span>
+			<ul class="menu">
+				<li><a href="#">MY TAXFREE</a></li>
+				<li><a href="#">NEW TRIP</a></li>
+				<li><a href="#">GET TAXFREE CARD</a></li>
+				<li><a href="#">SHOPPING</a></li>
+				<li><a href="#">STYLISTS</a></li>
+				<li><a href="#">BLOG</a></li>
+				<li><a href="#">ABOUT</a></li>
+			</ul>
+		</nav>
+		<div class="content">
+			<div class="horizontal-buttons">
+				<form>
+					<input type="text" placeholder="Искать здесь...">
+					<span class="fas fa-search"></span>
+				</form>
+				<span class="fas fa-bars"></span>
+			</div>
+			<div class="vertical-button">
+				<span class="far fa-comment-dots" data-toggle="modal" data-target="#modalAddTask"></span>
+			</div>
+			<div class="slider1">
+				<div class="offers-block first-slide">
+					<div class="offers-preview">
+						<h1 class="h1">THANK YOU, JOHN FOR USING OUR TAXFREE4U SERVICE!</h1>
+						<img class="divider" src="images/divider-white.png" alt="Divider">
+						<p class="text">Here’s some items you might like</p>
+						<a href="#">SEE ALL MY LOOKS</a>
+					</div>
+					<div class="flexbox">
+						<div class="rhombus-big">
+							<div>
+								<a href="#"><img src="images/circle1.png" alt="Gal Gadot"></a>
+								<img class="divider" src="images/divider-line-white.png" alt="Divider">
+								<p>Made by Jany</p>
+								<div class="star-rating">
+									<span class="fa fa-star-o" data-rating="1"></span>
+									<span class="fa fa-star-o" data-rating="2"></span>
+									<span class="fa fa-star-o" data-rating="3"></span>
+									<span class="fa fa-star-o" data-rating="4"></span>
+									<span class="fa fa-star-o" data-rating="5"></span>
+									<input type="hidden" name="whatever1" class="rating-value" value="3">
+								</div>
+							</div>
+						</div>
+						<div class="rhombus-small">
+							<div>
+								<p>500 $</p>
+								<img class="divider" src="images/divider-line-grey.png" alt="Divider">
+								<a href="#">Trousers</a>
+							</div>
+						</div>
+						<div class="rhombus-small">
+							<div>
+								<p>1 370 $</p>
+								<img class="divider" src="images/divider-line-grey.png" alt="Divider">
+								<a href="#">Jaket</a>
+							</div>
+						</div>
+						<div class="rhombus-small">
+							<div>
+								<p>900 $</p>
+								<img class="divider" src="images/divider-line-grey.png" alt="Divider">
+								<a href="#">Shoes</a>
+							</div>
+						</div>
+						<div class="rhombus-small">
+							<div>
+								<p>230 $</p>
+								<img class="divider" src="images/divider-line-grey.png" alt="Divider">
+								<a href="#">Shirt</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="offers-block second-slide">
+					<div class="offers-preview">
+						<h1 class="h1">THANK YOU, JOHN FOR USING OUR TAXFREE4U SERVICE!</h1>
+						<img class="divider" src="images/divider-white.png" alt="Divider">
+						<p class="text">Here’s some items you might like</p>
+						<a href="#">SEE ALL MY LOOKS</a>
+					</div>
+					<div class="flexbox">
+						<div class="rhombus-big">
+							<div>
+								<a href="#"><img src="images/circle3.png" alt="Lindsay"></a>
+								<img class="divider" src="images/divider-line-white.png" alt="Divider">
+								<p>Made by Lindsay</p>
+								<div class="star-rating">
+									<span class="fa fa-star-o" data-rating="1"></span>
+									<span class="fa fa-star-o" data-rating="2"></span>
+									<span class="fa fa-star-o" data-rating="3"></span>
+									<span class="fa fa-star-o" data-rating="4"></span>
+									<span class="fa fa-star-o" data-rating="5"></span>
+									<input type="hidden" name="whatever1" class="rating-value" value="3">
+								</div>
+							</div>
+						</div>
+						<div class="rhombus-small">
+							<div>
+								<p>500 $</p>
+								<img class="divider" src="images/divider-line-grey.png" alt="Divider">
+								<a href="#">Trousers</a>
+							</div>
+						</div>
+						<div class="rhombus-small">
+							<div>
+								<p>1 370 $</p>
+								<img class="divider" src="images/divider-line-grey.png" alt="Divider">
+								<a href="#">Jaket</a>
+							</div>
+						</div>
+						<div class="rhombus-small">
+							<div>
+								<p>900 $</p>
+								<img class="divider" src="images/divider-line-grey.png" alt="Divider">
+								<a href="#">Shoes</a>
+							</div>
+						</div>
+						<div class="rhombus-small">
+							<div>
+								<p>230 $</p>
+								<img class="divider" src="images/divider-line-grey.png" alt="Divider">
+								<a href="#">Shirt</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flex-content">
+				<div class="new-block-trip">
+					<div class="start-trip">
+						<div>
+							<h2 class="h2">GOING TO A NEW TRIP? <br>CLICK HERE TO GET YOUR REFUND</h2>
+							<p>With TaxFree4U you can get up to 18% refund from shopping in EU</p>
+							<a href="#">START NEW TRIP</a>
+						</div>
+					</div>
+				</div>
+				<div class="slider2">
+					<div class="recommended-flexbox first-slide">
+						<div class="recommended-block">
+							<div class="h3-holder">
+								<h3 class="h3">RECOMMENDED STYLISTS</h3>
+								<img class="divider" src="images/divider-black.png" alt="Divider">
+							</div>
+							<div class="text-holder">
+								<p class="rate-stylist">Stylist <br>Blogger</p>
+								<div class="stylist-rating">
+									<span class="fa fa-star-o" data-rating="1"></span>
+									<span class="fa fa-star-o" data-rating="2"></span>
+									<span class="fa fa-star-o" data-rating="3"></span>
+									<span class="fa fa-star-o" data-rating="4"></span>
+									<span class="fa fa-star-o" data-rating="5"></span>
+									<input type="hidden" name="whatever1" class="rating-value" value="3">
+								</div>
+								<p class="text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</p>
+								<a href="#">CONTACT WITH LINDSAY</a>
+								<p class="lindsay">LINDSAY PEARCE</p>
+							</div>
+						</div>
+					</div>
+					<div class="recommended-flexbox second-slide">
+						<div class="recommended-block">
+							<div class="h3-holder">
+								<h3 class="h3">RECOMMENDED STYLISTS</h3>
+								<img class="divider" src="images/divider-black.png" alt="Divider">
+							</div>
+							<div class="text-holder">
+								<p class="rate-stylist">Stylist <br>Blogger</p>
+								<div class="stylist-rating">
+									<span class="fa fa-star-o" data-rating="1"></span>
+									<span class="fa fa-star-o" data-rating="2"></span>
+									<span class="fa fa-star-o" data-rating="3"></span>
+									<span class="fa fa-star-o" data-rating="4"></span>
+									<span class="fa fa-star-o" data-rating="5"></span>
+									<input type="hidden" name="whatever1" class="rating-value" value="3">
+								</div>
+								<p class="text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</p>
+								<a href="#">CONTACT WITH LINDSAY</a>
+								<p class="lindsay">LINDSAY PEARCE</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flex-content">
+				<div class="column-video">
+					<div class="video-responsive">
+						<iframe allowfullscreen frameborder="0" height="720" src="https://player.vimeo.com/video/131337473?title=0&byline=0&portrait=0" width="1200"></iframe>
+					</div>
+				</div>
+				<div class="calculator">
+					<div class="calculator-holder">
+						<div>
+							<h4 class="h4">REFUND CALCULATOR</h4>
+							<img class="divider" src="images/divider-black.png" alt="Divider">
+							<form class="form-select">
+									<select class="select-country">
+									<option disabled selected>Select country</option>
+									<option>USA</option>
+									<option>UK</option>
+									<option>Ukraine</option>
+									<option>Vietnam</option>
+								</select>
+								<span class="icon-angle-down"></span>
+								<select class="select-type">
+									<option disabled selected>Type purchase</option>
+									<option>Cash payment</option>
+									<option>Account transfer</option>
+									<option>Payment by card</option>
+									<option>Payment by another type of payment instrument (coupon, voucher or coupon)</option>
+								</select>
+							</form>
+							<a class="btn-start" href="#">START NEW TRIP</a>
+						</div>
+					</div>
+					<div class="calculator-flexbox">
+						<div class="slider3">
+							<div class="show-box">
+								<img src="images/look1.jpg" alt="Look1">
+								<div class="looks-flexbox">
+									<h5 class="h5">LATEST LOOKS</h5>
+									<img class="divider" src="images/divider-black.png" alt="Divider">
+								</div>
+								<div class="made-block">
+									<img src="images/circle2.png" alt="Jennifer">
+									<div class="star-block">
+										<h6 class="h6">Made bu Jennifer</h6>
+										<div class="made-rating">
+											<span class="fa fa-star-o" data-rating="1"></span>
+											<span class="fa fa-star-o" data-rating="2"></span>
+											<span class="fa fa-star-o" data-rating="3"></span>
+											<span class="fa fa-star-o" data-rating="4"></span>
+											<span class="fa fa-star-o" data-rating="5"></span>
+											<input type="hidden" name="whatever1" class="rating-value" value="3">
+										</div>
+									</div>
+									<span class="icon-hand-pointer-o"></span>
+								</div>
+							</div>
+							<div class="show-box">
+								<img src="images/look3.jpg" alt="Look1">
+								<div class="looks-flexbox">
+									<h5 class="h5">LATEST LOOKS</h5>
+									<img class="divider" src="images/divider-black.png" alt="Divider">
+								</div>
+								<div class="made-block">
+									<img src="images/circle2.png" alt="Jennifer">
+									<div class="star-block">
+										<h6 class="h6">Made bu Jennifer</h6>
+										<div class="made-rating">
+											<span class="fa fa-star-o" data-rating="1"></span>
+											<span class="fa fa-star-o" data-rating="2"></span>
+											<span class="fa fa-star-o" data-rating="3"></span>
+											<span class="fa fa-star-o" data-rating="4"></span>
+											<span class="fa fa-star-o" data-rating="5"></span>
+											<input type="hidden" name="whatever1" class="rating-value" value="3">
+										</div>
+									</div>
+									<span class="icon-hand-pointer-o"></span>
+								</div>
+							</div>
+						</div>
+						<div class="slider4">
+							<div class="rated-box">
+								<img src="images/look2.jpg" alt="Look2">
+								<div class="best-looks-flexbox">
+									<div class="best-looks-box">
+										<h5 class="h5">BEST RATED LOOKS</h5>
+										<img class="divider" src="images/divider-black.png" alt="Divider">
+									</div>
+								</div>
+							</div>
+							<div class="rated-box">
+								<img src="images/look4.jpg" alt="Look2">
+								<div class="best-looks-flexbox">
+									<div class="best-looks-box">
+										<h5 class="h5">BEST RATED LOOKS</h5>
+										<img class="divider" src="images/divider-black.png" alt="Divider">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="partners-flexbox">
+				<div class="partners-block">
+					<h4 class="h4">PRODUCT PARTNERS</h4>
+					<img class="divider" src="images/divider-black.png" alt="Divider">
+					<p class="partners-description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+					<a class="btn-featured" href="#">Featured</a>
+					<div class="form-select-city">
+						<select class="select-city">
+							<option disabled selected>By city</option>
+							<option>New York</option>
+							<option>London</option>
+							<option>Kiev</option>
+							<option>Ha Noi</option>
+						</select>
+						<span class="icon-angle-down"></span>
+					</div>
+					<div class="arrows-flexbox">
+						<div class="rhombus-arrow"><div class="arrow-rotate"><span class="icon-arrow-left2 black rotate"></span></div></div>
+						<span>-</span><span>-</span><span>-</span><span>-</span><span>-</span><span>-</span><span>-</span><span>-</span><span>-</span><span>-</span><span>-</span><span>-</span><span>-</span><span>-</span><span>-</span><span>-</span><span>-</span>
+						<div class="rhombus-arrow"><div class="arrow-rotate"><span class="icon-arrow-right2 black rotate"></span></div></div>
+					</div>
+				</div>
+				<div class="price-block">
+					<div class="item">
+						<img src="images/item1.png" alt="Item1" class="shirt">
+						<div class="rhombus-new">
+							<div class="rotate-new">
+								<span class="new">NEW</span>
+							</div>
+						</div>
+						<div class="rhombus-color" id="grey"></div>
+						<div class="rhombus-color second" id="burgundy"></div>
+						<div class="rhombus-color" id="blue"></div>
+					</div>
+					<div class="info">
+						<div class="price">250 $</div>
+						<div class="like-block">
+							<div class="icon-holder">
+								<div class="icon-rotate">
+									<span class="icon-heart-o"></span>
+								</div>
+							</div>
+							<div class="icon-holder">
+								<div class="icon-rotate shop">
+									<span class="icon-shopping-basket"></span>
+								</div>
+							</div>
+							<div class="icon-holder">
+								<div class="icon-rotate share">
+									<span class="icon-share-alt"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="price-block">
+					<div class="item">
+						<img class="img-cover" src="images/item2.png" alt="Item2">
+						<div class="rhombus-new">
+							<div class="rotate-new">
+								<span class="new">NEW</span>
+							</div>
+						</div>
+					</div>
+					<div class="info">
+						<div class="price">500 $</div>
+						<div class="like-block">
+							<a class="item-name" href="#">Filson Small Duffell Bag</a>
+						</div>
+					</div>
+				</div>
+				<div class="price-block">
+					<div class="item item-center">
+						<img src="images/item3.png" alt="Item2">
+						<div class="rhombus-new">
+							<div class="rotate-new">
+								<span class="new">NEW</span>
+							</div>
+						</div>
+					</div>
+					<div class="info">
+						<div class="price">2000 $</div>
+						<div class="like-block">
+							<a class="item-name" href="#">Marine Grand Deck 6300-300/GD</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="logo2-holder">
+					<img src="images/logo2.png" alt="Logo White">
+				</div>
+				<div class="footer-flexbox">
+					<div class="appstore">
+						<span class="fab fa-app-store"></span>
+						<a class="itunes-download" href="#">DOWNLOAD APP IN Itunes</a>
+					</div>
+					<span class="invisible-menu">MENU</span>
+					<div class="first-menu-holder">
+						<ul class="footer-menu">
+							<li><a href="#">MY TAXFREE</a></li>
+							<li><a href="#">NEW TRIP</a></li>
+							<li><a href="#">GET TAXFREE CARD</a></li>
+							<li><a href="#">SHOPPING</a></li>
+						</ul>
+					</div>
+					<div class="second-menu-holder">
+						<ul class="footer-menu">
+							<li><a href="#">STYLISTS</a></li>
+							<li><a href="#">BLOG</a></li>
+							<li><a href="#">ABOUT</a></li>
+						</ul>
+					</div>
+					<form class="form-footer">
+						<label class="label" for="email">FOLLOW US</label>
+						<div class="email-holder">
+							<input id="email" type="email" autocomplete="off" placeholder="Email" name="email" class="email">
+							<a class="subscribe" href="#">Subscribe</a>
+						</div>
+						<div class="social-flexbox">
+							<span class="icon-pinterest-p"></span>
+							<span class="icon-facebook"></span>
+							<span class="icon-twitter"></span>
+							<span class="icon-instagram"></span>
+						</div>
+					</form>
+				</div>
+			</footer>
+		</div>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script src="./js/index.js"></script>
+	</div>
+	<!-- Modal -->
+<div class="modal fade" id="modalAddTask" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title">Send us a message</h4>
+			</div>
+
+			<div class="modal-body">
+				<form id="formAddTask">
+					<div class="form-group">
+						<input type="text" name="name" autocomplete="off" placeholder="Name" autofocus="true" class="form-control">
+						<input type="email" name="email" autocomplete="off" placeholder="Email" autofocus="true" class="form-control">
+						<textarea name="description" id="description" cols="30" rows="10" placeholder="Your message" class="form-control"></textarea>
+					</div>
+				</form>
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+				<button class="btn btn-success" form="formAddTask">Send</button>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
