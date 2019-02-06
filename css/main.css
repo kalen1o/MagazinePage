@@ -703,6 +703,7 @@ a {
 }
 .logo2-holder > img {
 	display: block;
+	width: 100%;
 	margin: 0px auto;
 }
 .footer-flexbox {
@@ -947,6 +948,9 @@ a {
 	}
 	.second-menu-holder {
 		width: 20%;
+	}
+	.logo2-holder > img {
+		width: auto;
 	}
 	.footer-menu {
 		margin: 0;
