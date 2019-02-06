@@ -260,7 +260,6 @@ a {
 .start-trip{
 	width: 220px;
 	height: 220px;
-	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
