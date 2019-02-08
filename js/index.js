@@ -62,6 +62,7 @@ function menu(){
 var searchFlag = false;
 $search.on('click', function(event) {
   event.preventDefault();
+  $('[name="search"]').focus();
 
   let $input = $('[placeholder="Искать здесь..."]', $(this).parent());
   console.log($input);
@@ -88,10 +89,41 @@ $menu.on('click', function(event) {
 });
 
 var $modalAddTask = $('#modalAddTask'),
-    $formAddTask = $('#formAddTask');
-$modalAddTask.on('shown.bs.modal', function(event) {
+    $formAddTask = $('#formAddTask'),
+    $formSearch = $('#formSearch');
+
+$modalAddTask.on('shown.bs.modal', function() {
+  console.log(this)
   $('[name="name"]', $formAddTask).focus();
 });
+
+$formAddTask.on('submit', function(event) {
+  event.preventDefault();
+
+  let question = {
+    name: $('[name="name"]', this).val(),
+    email: $('[name="email"]', this).val(),
+    description: $('[name="description"]', this).val()
+  }
+
+  if(!question.name && !question.email && !question.description) {
+    $modalAddTask.modal('hide');
+    return;
+  };
+
+  $modalAddTask.modal('hide');
+
+  this.submit();
+  this.reset();
+});
+
+$formSearch.on('submit', function(event) {
+  event.preventDefault();
+  if( !$('[name="search"]', this).val() ) {
+    return;
+  };
+  this.submit();
+})
 
 $('#grey').on('click', function(event) {
   event.preventDefault();
