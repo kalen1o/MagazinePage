@@ -152,10 +152,6 @@ $('#blue').on('click', function(event) {
   $image.remove();
 })
 
-$('body').on('click', 'button.play', function(event) {
-  console.log(this)
-})
-
 $(document).ready(function() {
   menu();
   SetRatingStar();

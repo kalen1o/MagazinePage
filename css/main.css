@@ -57,6 +57,24 @@ a {
 	text-decoration: none;
 	color: #070707;
 }
+.drop{
+	display: none;
+    position: absolute;
+    z-index: 100;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    left: 100%;
+    top: 0;
+}
+.drop-menu{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 .content{
 	width: 100%;
 	max-width: 1276px;
@@ -837,9 +855,14 @@ a {
 		justify-content: flex-end;
 		z-index: 0;
 	}
-	.menu li {
+	.menu > li {
+		position: relative;
 		line-height: 60px;
 		padding-right: 20px;
+	}
+	.li {
+		min-width: 100px;
+		line-height: auto;
 	}
 	.menu li:last-child {
 		padding-right: 60px;
@@ -974,6 +997,9 @@ a {
 @media (min-width: 1024px) {
 	.menu li {
 		padding-right: 40px;
+	}
+	.menu > li:hover .drop {
+		display: flex;
 	}
 	.offers-preview {
 		margin-left: 270px;
